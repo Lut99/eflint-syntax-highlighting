@@ -3,20 +3,25 @@ Provides basic syntax highlighting for the eFLINT language (https://gitlab.com/e
 
 
 ## Installation
-To install the extension in your local setup, clone the repository first.
+To install the extension in your local setup, you can either download or compile the package VSIX file.
+
+### Downloading
+Go to the [releases page](https://github.com/Lut99/eflint-syntax-highlighting/releases) and download the .vsix file from the latest release.
+
+### Compilation
+To compile the VSIX file manually, clone [the repository](https://github.com/Lut99/eflint-syntax-highlighting) first.
 
 Then, install [`npm`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and:
 ```bash
 npm install -g vsce
 ```
 
-Then, CD into the repository root and run:
+CD into the repository root and compile the extension to a package VSIX file:
 ```bash
 vsce package
 ```
-to compile the package file.
 
-Finally, you can install the extension by navigating to the Extensions tab, click the three-dot menu at the top of the middle panel and select "Install from VSIX...". Browse to the extension, and click: "Install". The extension should now be added to your Visual Studio Code setup.
+Finally, you can install the extension by navigating to the Extensions tab in a Visual Studio Code window, click the three-dot menu at the top of the middle panel and select "Install from VSIX...". Browse to the extension, and click: "Install". The extension should now be added to your Visual Studio Code setup.
 
 ![Screenshot to install VSIX file](img/showcase_vsix.png)  
 _Menu to install local .vsix file using the [Panda Syntax](https://marketplace.visualstudio.com/items?itemName=tinkertrain.theme-panda) theme._
