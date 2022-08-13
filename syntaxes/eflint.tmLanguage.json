@@ -1,0 +1,83 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "eFLINT",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#buildins"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#implicit-strings"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.eflint",
+					"match": "\\b(Fact|Placeholder|Predicate|Invariant|Event|Act|Duty|Extend)\\b"
+				},
+				{
+					"name": "keyword.control.eflint",
+					"match": "\\b(Identified by|Actor|Related to|Syncs with|Holds when|Derived from|Conditioned by|Creates|Obfuscated|Terminates|When)\\b"
+				}
+			]
+		},
+		"buildins": {
+			"patterns": [{
+				"name": "support.function.eflint",
+				"match": "\\b(Not|Foreach|Exists|Forall|String|Int|Boolean|Time|Atom|Sum|Count|Max|Min)\\b"
+			}]
+		},
+		"variables": {
+			"patterns": [{
+				"name": "variable.language",
+				"match": "\\b(string|int)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.eflint",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.eflint",
+					"match": "\\\\[\\'\"trn]"
+				}
+			]
+		},
+		"implicit-strings": {
+			"patterns": [{
+				"name": "string.other.eflint",
+				"match": "\\b[A-Z][A-Za-z0-9\\-_]*\\b"
+			}]
+		},
+		"constants": {
+			"patterns": [{
+				"name": "constant.numeric.eflint",
+				"match": "\\b-?[0-9]+\\b"
+			}]
+		},
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.double-slash",
+				"match": "//.*\n"
+			}]
+		}
+	},
+	"scopeName": "source.eflint"
+}

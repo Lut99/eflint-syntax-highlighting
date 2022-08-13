@@ -1,0 +1,31 @@
+{
+  "name": "eflint-syntax-highlighting",
+  "license": "GPLV3",
+  "displayName": "eFLINT Syntax Highlighting",
+  "description": "Provides basic syntax highlighting for the eFLINT language (https://gitlab.com/eflint)",
+  "version": "0.0.1",
+	"publisher": "Lut99",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Lut99/eflint-syntax-highlighting.git"
+	},
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "eflint",
+      "aliases": ["eFLINT", "eflint"],
+      "extensions": [".eflint"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "eflint",
+      "scopeName": "source.eflint",
+      "path": "./syntaxes/eflint.tmLanguage.json"
+    }]
+  }
+}
