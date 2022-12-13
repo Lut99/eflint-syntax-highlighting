@@ -20,7 +20,11 @@
       "id": "eflint",
       "aliases": ["eFLINT", "eflint"],
       "extensions": [".eflint"],
-      "configuration": "./language-configuration.json"
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "./icons/eflint-cropped-transparent.png",
+        "dark": "./icons/eflint-cropped-transparent.png"
+      }
     }],
     "grammars": [{
       "language": "eflint",
