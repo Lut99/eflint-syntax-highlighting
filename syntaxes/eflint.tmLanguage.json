@@ -6,6 +6,9 @@
 			"include": "#keywords"
 		},
 		{
+			"include": "#constants"
+		},
+		{
 			"include": "#buildins"
 		},
 		{
@@ -16,9 +19,6 @@
 		},
 		{
 			"include": "#implicit-strings"
-		},
-		{
-			"include": "#constants"
 		},
 		{
 			"include": "#comments"
@@ -33,21 +33,47 @@
 				},
 				{
 					"name": "keyword.control.eflint",
-					"match": "\\b(Identified by|Actor|Related to|Syncs with|Holds when|Derived from|Conditioned by|Creates|Obfuscated|Terminates|When)\\b"
+					"match": "\\b(Identified by|Actor|Recipient|Holder|Claimant|Terminated by|Violated when|Related to|Syncs with|Holds when|Derived from|Conditioned by|Creates|Obfuscated|Terminates)\\b"
+				},
+				{
+					"name": "keyword.operator.eflint",
+					"match": "(\\+|-|\\*|/|\\.|\\|\\||&&|==|!=|<=|<|>=|>)"
+				},
+				{
+					"name": "keyword.operator.eflint",
+					"match": "\\b(Not|Foreach|Exists|Forall|Sum|Count|Max|Min|When)\\b"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.numeric.eflint",
+					"match": "\\b-?[0-9]+\\b"
+				},
+				{
+					"name": "constant.language",
+					"match": "\\b(true|false|True|False)\\b"
 				}
 			]
 		},
 		"buildins": {
 			"patterns": [{
 				"name": "support.function.eflint",
-				"match": "\\b(Not|Foreach|Exists|Forall|String|Int|Boolean|Time|Atom|Sum|Count|Max|Min)\\b"
+				"match": "\\b(String|Int|Bool|Boolean|Time|Atom)\\b"
 			}]
 		},
 		"variables": {
-			"patterns": [{
-				"name": "variable.language",
-				"match": "\\b(string|int)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "variable.language.eflint",
+					"match": "\\b(string|int|bool)\\b"
+				},
+				{
+					"name": "variable.language.other",
+					"match": "([a-z_][A-Za-z0-9-_]*|\\[[A-Za-z_][A-Za-z0-9_\\- ]*\\])"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.eflint",
@@ -64,12 +90,6 @@
 			"patterns": [{
 				"name": "string.other.eflint",
 				"match": "\\b[A-Z][A-Za-z0-9\\-_]*\\b"
-			}]
-		},
-		"constants": {
-			"patterns": [{
-				"name": "constant.numeric.eflint",
-				"match": "\\b-?[0-9]+\\b"
 			}]
 		},
 		"comments": {
