@@ -18,7 +18,10 @@ To install the extension in your local setup, you can either download the extens
 ### Marketplace
 To download the extension from the marketplace, simply go the `Extensions` tab in Visual Studio Code.
 
-Then, search for "eflint syntax highlighting" and click on `install` to install the latest version.
+Then, search for "eflint" and click on `Install` to install the latest version.
+
+![Screenshot to install from the marketplace](img/download.png)  
+_Menu to install the extension from the marketplace._
 
 This method is recommended because you can also automatically receive updates.
 
