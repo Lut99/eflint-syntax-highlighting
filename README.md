@@ -7,7 +7,7 @@ Adds basic syntax highlighting for most keywords, buildin functions and data typ
 
 
 ![Example syntax hightlighting](img/example.png)  
-_Example snippet of eFLINT using the [Panda Syntax](https://marketplace.visualstudio.com/items?itemName=tinkertrain.theme-panda) theme._
+_Example of the eFLINT syntax highlighter using the builtin Monokai theme._
 
 More constructs or features may be added in the future. Ideally, a language server might even provide much more advanced syntax highlighting.
 
