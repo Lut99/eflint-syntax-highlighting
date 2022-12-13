@@ -10,6 +10,7 @@ All notable changes to the "eflint-syntax-highlighting" extension will be docume
 - Identifiers (including `[ ... ]`).
 - `Boolean` as a proper builtin.
 - An icon for the eFLINT language.
+- Special-character operators (`+`, `?`, `.`, `==`, `>`, ...).
 
 ### Changed
 - `Not`, `Foreach`, `Exists`, `Forall`, `Sum`, `Count`, `Max` and `Min` are now parsed as operators.
