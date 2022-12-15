@@ -2,7 +2,12 @@
 
 All notable changes to the "eflint-syntax-highlighting" extension will be documented in this file.
 
-## [1.1.0] - 2022-08-13
+## [1.1.1] - 2022-12-15
+### Fixed
+- Comments not being recognized and properly highlighted
+- Some links not working in the README.
+
+## [1.1.0] - 2022-12-13
 ### Added
 - Hightlighting for keywords `Recipient`, `Holder`, `Claimant`, `Terminated by` and `Violated when`.
 - `true`, `True`, `false` and `False` as additional constants.

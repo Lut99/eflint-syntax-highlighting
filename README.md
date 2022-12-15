@@ -1,5 +1,5 @@
 # eFLINT Syntax Highlighting
-Provides basic syntax highlighting for the eFLINT language (https://gitlab.com/eflint) for Visual Studio Code.
+Provides basic syntax highlighting for the [eFLINT language](https://gitlab.com/eflint) for Visual Studio Code.
 
 
 ## Features
@@ -27,7 +27,7 @@ This method is recommended because you can also automatically receive updates.
 
 
 ### Downloading
-You can also choose to download a specific version of the extension from its [repository](/eflint/tools/syntax-hightlighting-vscode/releases). Simply select the desired release, and then download the `.vsix` file to someplace on your machine (where does not matter, as long as you can find it).
+You can also choose to download a specific version of the extension from its [repository](https://gitlab.com/eflint/tools/syntax-highlighting-vscode/-/releases). Simply select the desired release, and then download the `.vsix` file to someplace on your machine (where does not matter, as long as you can find it).
 
 Then, you can install the extension by going to the `Extensions` tab in Visual Studio Code and then clicing the three-dot menu at the top of the middle panel. From there, you can select `Install from VSIX...`.
 
@@ -48,7 +48,7 @@ Before you begin, you should first install [`npm`](https://docs.npmjs.com/downlo
 npm install -g vsce
 ```
 
-Then you can clone the [repository](/eflint/tools/syntax-hightlighting-vscode):
+Then you can clone the [repository](https://gitlab.com/eflint/tools/syntax-highlighting-vscode):
 ```bash
 git clone https://gitlab.com/eflint/tools/syntax-hightlighting-vscode
 cd ./syntax-highlighting-vscode
@@ -79,7 +79,10 @@ _The button to open the language selection menu._
 _The menu to select the eFLINT language for this file._
 
 ## Release Notes
-A brief overview of each release is given here. For more details, check the [CHANGELOG.md](/eflint/tools/syntax-highlighting-vscode/CHANGELOG.md) file.
+A brief overview of each release is given here. For more details, check the [CHANGELOG.md](https://gitlab.com/eflint/tools/syntax-highlighting-vscode/-/blob/main/CHANGELOG.md) file.
+
+### 1.1.1
+Bug fixes for comments and links in the README.
 
 ### 1.1.0
 Added support for a lot more keywords, operators and identifiers. Also added an icon for the language.

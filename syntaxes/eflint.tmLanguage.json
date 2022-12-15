@@ -3,6 +3,9 @@
 	"name": "eFLINT",
 	"patterns": [
 		{
+			"include": "#comments"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -19,12 +22,15 @@
 		},
 		{
 			"include": "#implicit-strings"
-		},
-		{
-			"include": "#comments"
 		}
 	],
 	"repository": {
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.double-slash",
+				"match": "//.*\n"
+			}]
+		},
 		"keywords": {
 			"patterns": [
 				{
@@ -90,12 +96,6 @@
 			"patterns": [{
 				"name": "string.other.eflint",
 				"match": "\\b[A-Z][A-Za-z0-9\\-_]*\\b"
-			}]
-		},
-		"comments": {
-			"patterns": [{
-				"name": "comment.line.double-slash",
-				"match": "//.*\n"
 			}]
 		}
 	},
