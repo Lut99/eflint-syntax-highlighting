@@ -81,6 +81,9 @@ _The menu to select the eFLINT language for this file._
 ## Release Notes
 A brief overview of each release is given here. For more details, check the [CHANGELOG.md](https://gitlab.com/eflint/tools/syntax-highlighting-vscode/-/blob/main/CHANGELOG.md) file.
 
+### 1.2.0
+More keywords and support for `#include` and `#require`.
+
 ### 1.1.1
 Bug fixes for comments and links in the README.
 

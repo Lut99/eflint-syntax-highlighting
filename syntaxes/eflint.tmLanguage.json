@@ -35,19 +35,23 @@
 			"patterns": [
 				{
 					"name": "keyword.control.eflint",
-					"match": "\\b(Fact|Placeholder|Predicate|Invariant|Event|Act|Duty|Extend)\\b"
+					"match": "\\b(Fact|Placeholder|Predicate|Invariant|Event|Act|Duty|Extend|Open|Closed)\\b"
 				},
 				{
 					"name": "keyword.control.eflint",
-					"match": "\\b(Identified by|Actor|Recipient|Holder|Claimant|Terminated by|Violated when|Related to|Syncs with|Holds when|Derived from|Conditioned by|Creates|Obfuscated|Terminates)\\b"
+					"match": "\\b(Identified by|Actor|Recipient|Holder|Claimant|Created by|Obfuscated by|Terminated by|Violated when|Violated|Related to|Syncs with|Holds when|Derived from|Derived externally|Conditioned by|Enforced by|Creates|Obfuscated|Terminates)\\b"
 				},
 				{
 					"name": "keyword.operator.eflint",
-					"match": "(\\+|-|\\*|/|\\?|!|\\.|\\|\\||&&|==|!=|<=|<|>=|>)"
+					"match": "(\\+|-|\\*|/|\\?-|\\?|!\\?|!|\\.|\\|\\||&&|==|!=|<=|<|>=|>)"
 				},
 				{
 					"name": "keyword.operator.eflint",
-					"match": "\\b(Not|Foreach|Exists|Forall|Sum|Count|Max|Min|When)\\b"
+					"match": "\\b(Not|Foreach|Exists|Forall|Force|Do|Sum|Count|Max|Min|When|Union|Enabled)\\b"
+				},
+				{
+					"name": "keyword.other.macros.eflint",
+					"match": "#(include|require)\\b"
 				}
 			]
 		},
@@ -66,7 +70,7 @@
 		"buildins": {
 			"patterns": [{
 				"name": "support.function.eflint",
-				"match": "\\b(String|Int|Bool|Boolean|Time|Atom)\\b"
+				"match": "\\b(String|Int|Bool|Boolean|Time|Atom|Current Time)\\b"
 			}]
 		},
 		"variables": {

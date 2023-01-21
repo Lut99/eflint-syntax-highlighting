@@ -3,7 +3,7 @@
   "license": "GPLV3",
   "displayName": "eFLINT Syntax Highlighting",
   "description": "Provides basic syntax highlighting for the eFLINT language (https://gitlab.com/eflint)",
-  "version": "1.1.1",
+  "version": "1.2.0",
 	"publisher": "Lut99",
 	"repository": {
 		"type": "git",
